@@ -5,24 +5,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="connexion.css" />
         <title>Inscription</title>
-    </head>
-
-    <script>
-        function setPasswordConfirmValidity(str) {
-            const enterMp = document.getElementById('enterMp');
-            const confirmMp = document.getElementById('confirmMp');
-    
-            if (enterMp.value === confirmMp.value) {
-                 confirmMp.setCustomValidity('');
-            } else {
-                confirmMp.setCustomValidity('Mot de passe non similaire');
-            }
-            // console.log('confirmMp customError ', document.getElementById('confirmMp').validity.customError);
-            // console.log('confirmMp validationMessage ', document.getElementById('confirmMp').validationMessage);
-        }
-    </script>    
+    </head>  
 
     <body>
+
+        <script>
+            function setPasswordConfirmValidity(str) {
+                const enterMp = document.getElementById('enterMp');
+                const confirmMp = document.getElementById('confirmMp');
+        
+                if (enterMp.value === confirmMp.value) {
+                     confirmMp.setCustomValidity('');
+                } else {
+                    confirmMp.setCustomValidity('Mot de passe non similaire');
+                }
+            }
+        </script>  
+
         <header class="header2">
             <h1>Inscription</h1>
         </header>
@@ -66,7 +65,7 @@
                             <label for="femelle">Femelle</label>
                             <input type="radio" id="femelle" name="user_gender">
                             <label for="autre">Autre</label>
-                            <input type="radio" id="autrer" name="user_gender">
+                            <input type="radio" id="autre" name="user_gender">
                         </article>
                     </article>
                     <article class="studies2">
@@ -86,7 +85,7 @@
                     </article>
                     <article class="intro2">
                         <label for="enterIntro">Présentation personnelle :</label>
-                        <textarea id="enterIntro" name="user_intro" rows="3"required></textarea>
+                        <textarea id="enterIntro" name="user_intro" rows="3" required></textarea>
                     </article>
                     <article class="hobbies2">
                         <label for="enterHobbies1">Cinema</label>

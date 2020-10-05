@@ -8,6 +8,7 @@
     </head>
 
     <body>
+
         <header>
             <h1>Connexion</h1>
         </header>
@@ -17,19 +18,19 @@
                 <form class="form1" action="traitement.php" method="post">
                     <article class="pseudo1">
                         <label for="pseudo">Votre pseudo :</label>
-                        <input type="text" id="pseudo" name="user_pseudo">
+                        <input type="text" id="pseudo" name="user_pseudo" required>
                     </article>
                     <article class="mp1">
                         <label for="motdepasse">Votre mot de passe :</label>
-                        <input type="password" id="motdepasse" name="user_password">
+                        <input type="password" id="motdepasse" name="user_password" required>
                     </article>
                     <article class="button1">
-                        <button type="submit">Valider</button>
+                        <button type="submit" formaction="inscription.html">Valider</button>
                     </article>
                 </form>
                     <article class="linkcreate">
-                        <a href="#">Créer un compte</a>
-                        <a href="#">Mot de passe oublié</a>
+                        <a href="inscription.html">Créer un compte</a>
+                        <a href="motdepasse.html">Mot de passe oublié</a>
                     </article>
             </section>
         </main>
@@ -38,6 +39,5 @@
             <p>Yaya-production™️</p>
         </footer>
         
-    
     </body>
 </html>
