@@ -1,0 +1,348 @@
+
+body {
+    display:flex;
+    flex-direction: column;
+    margin: 0px;
+    background-image:url(images/wallpaper7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    height: 5vh;
+    width: auto;
+    background-color: rgb(3, 3, 3, 0.7);
+    border-bottom: 1px solid white;
+}
+
+/* specifique page inscription*/
+.header2 {
+    height: 10%;
+    width: auto;
+    background-color: rgb(3, 3, 3, 0.7);
+    border-bottom: 1px solid white;
+}
+/*----------------------------------------*/
+
+header h1 {
+    margin-top:0px ;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    padding-top: 5px;
+    color: white;
+    font-family: monospace;
+}
+main { 
+    display: flex;
+    height: 92vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/*specifique page inscription*/
+.main2{
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+/*----------------------------------------*/
+
+footer {
+    height: 3vh;
+    width: auto;
+    background-color: rgb(0, 0, 0, 0.9);
+}
+
+/*specifique page inscription*/
+.footer2 {
+    height: 5%;
+    width: auto;
+    background-color: rgb(0, 0, 0, 0.9);
+}
+/*----------------------------------------------*/
+
+footer p {
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    border-top: 2px solid white;
+    font-family: monospace;
+}
+
+/* Ici le CSS de la première page : connexion*/
+.boite1 {
+    width: 600px;
+    height: 300px;
+    background-color: rgb(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid white;
+    border-radius: 30px; 
+}
+.form1 {
+    background-color: rgb(0, 0, 0, 0.01);
+    color: white;
+    width: 500px;
+    height: 40%;
+    margin: auto;
+    padding-top: 50px;
+}
+.form1 article  {
+    margin-top: 10px;
+}
+.form1 label {
+    /*display: inline-block;*/
+    width: 200px;
+    /*text-align: right;*/
+}
+.form1 input {
+    font-family: 'Courier New', Courier, monospace;
+    font:1em;
+    width: 200px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+.pseudo1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pseudo1 label {
+    text-align: center;
+    padding-bottom: 3px;
+}
+.mp1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mp1 label {
+    text-align: center;
+    padding-bottom: 3px;
+}
+.button1 {
+    background-color: rgb(39, 39, 85);
+    width: 100px;
+    margin: auto;
+    margin-top:10px;
+}
+.form1 button{
+    width: 100px;
+    align-self: center;
+}
+.linkcreate {
+    background-color:rgb(0, 0, 0, 0.01);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-bottom: 30px;
+}
+.linkcreate a {
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+/* ------------------------------------------------------------*/
+
+/*Ici le CSS de la deuxième page : inscription*/
+.boite2 {
+    width: 600px;
+    /*height: 300px;*/
+    background-color: rgb(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid white;
+    border-radius: 30px; 
+
+}
+.form2 {
+    background-color: rgb(0, 0, 0, 0.01);
+    color: white;
+    width: 500px;
+   /* height: 40%;*/
+    margin: auto;
+    padding-top: 20px;
+}
+.form2 article  {
+    margin-top: 10px;
+}
+.form2 label {
+    /*display: inline-block;*/
+    /* width: 200px; */
+    /*text-align: right;*/
+}
+.form2 input {
+    font-family: 'Courier New', Courier, monospace;
+    font:1em;
+    /* width: 200px; */
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+.pseudo2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pseudo2 label {
+    text-align: center;
+    padding-bottom: 3px;
+}
+.mp2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mp2 label {
+    text-align: center;
+    padding-bottom: 3px;
+}
+.mpConfirm2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mpConfirm2 label {
+    text-align: center;
+    padding-bottom: 3px;
+}
+.dateOfBirth2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dateOfBirth2 label {
+    text-align: center;
+    padding-bottom: 3px;
+}
+.firstName2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.firstName2 label {
+    text-align: center;
+    padding-bottom: 3px;
+}
+.lastName2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lastName2 label {
+    text-align: center;
+    padding-bottom: 3px;
+}
+.dateOfBirth2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dateOfBirth2 label {
+    text-align: center;
+    padding-bottom: 3px;
+}
+.dateOfBirth2 input {
+    text-align: center;
+}
+.email2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.email2 label {
+    text-align: center;
+    padding-bottom: 3px;
+}
+
+/*---------------------------------------*/
+.gender2 {
+    width: 100px;
+    background-color: rgb(0, 0, 0, 0.01);
+    margin: auto;
+    text-align: center;
+    
+}
+.radioboxes {
+    /*display: flex;
+    flex-direction: column;*/
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(0, 0, 0, 0.01);
+}
+.radioboxes label{
+    background-color: rgb(0, 0, 0, 0.01);
+    width: auto;
+}
+.radioboxes input{
+    background-color: rgb(75, 150, 127);
+    width: auto;
+    align-self: center;
+}
+/*------------------------------------*/
+
+.studies2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.studies2 label {
+    text-align: center;
+    padding-bottom: 3px;
+}
+.phoneNumber2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.phoneNumber2 label {
+    text-align: center;
+    padding-bottom: 3px;
+}
+.intro2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.intro2 label {
+    text-align: center;
+    padding-bottom: 3px;
+}
+/* ------------------------------- */
+.hobbies2 {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    background-color: rgb(0, 0, 0, 0.01);
+   
+}
+.hobbies2 label{
+    background-color: rgb(0, 0, 0, 0.01);
+    margin-left: 10px;
+}
+.hobbies2 input{
+    background-color: rgb(0, 0, 0, 0.01);
+   
+}
+
+/*.hobbies2 label {
+    text-align: center;
+    padding-bottom: 3px;
+}*/
+/* ------------------------------- */
+.button2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.button2  label {
+    text-align: center;
+    padding-bottom: 3px;
+}

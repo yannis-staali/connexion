@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="connexion.css" />
+        <title>Inscription</title>
+    </head>
+
+    <script>
+        function setPasswordConfirmValidity(str) {
+            const enterMp = document.getElementById('enterMp');
+            const confirmMp = document.getElementById('confirmMp');
+    
+            if (enterMp.value === confirmMp.value) {
+                 confirmMp.setCustomValidity('');
+            } else {
+                confirmMp.setCustomValidity('Mot de passe non similaire');
+            }
+            // console.log('confirmMp customError ', document.getElementById('confirmMp').validity.customError);
+            // console.log('confirmMp validationMessage ', document.getElementById('confirmMp').validationMessage);
+        }
+    </script>    
+
+    <body>
+        <header class="header2">
+            <h1>Inscription</h1>
+        </header>
+
+        <main class="main2">
+            <section class="boite2">
+                <form class="form2" action="traitement.php" method="post">
+                    <article class="pseudo2">
+                        <label for="pseudo">Votre pseudo :</label>
+                        <input type="text" id="pseudo" name="user_pseudo" required>
+                    </article>
+                    <article class="mp2">
+                        <label for="enterMp">Votre mot de passe (au moins 8 caractères) : </label>
+                        <input pattern=".{8,}" type="password" id="enterMp" name="user_mp" oninput="setPasswordConfirmValidity();" required>
+                    </article>
+                    <article class="mpConfirm2">
+                        <label for="confirmMp">Confirmez :</label>
+                        <input pattern=".{8,}" type="password" id="confirmMp" name="user_confirmMp" oninput="setPasswordConfirmValidity();" required>
+                    </article>
+                    <article class="dateOfBirth2">
+                        <label for="enterDate">Date de naissance :</label>
+                        <input type="date" id="enterDate" name="user_dateOfBirth" required>
+                    </article>
+                    <article class="firstName2">
+                        <label for="enterFirstName">Prénom :</label>
+                        <input type="text" id="enterFirstName" name="user_firstName" required>
+                    </article>
+                    <article class="lastName2">
+                        <label for="enterLastName">Nom :</label>
+                        <input type="text" id="enterLastName" name="user_lastName" required>
+                    </article>
+                    <article class="email2">
+                        <label for="enterEmail">Email :</label>
+                        <input type="email" id="enterEmail" name="user_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                    </article>
+                    <article class="gender2">
+                        <p>Votre genre :</p>
+                        <article class="radioboxes">
+                            <label for="male">Male</label>
+                            <input type="radio" id="male" name="user_gender">
+                            <label for="femelle">Femelle</label>
+                            <input type="radio" id="femelle" name="user_gender">
+                            <label for="autre">Autre</label>
+                            <input type="radio" id="autrer" name="user_gender">
+                        </article>
+                    </article>
+                    <article class="studies2">
+                        <label for="enterStudies">Votre niveau d'études :</label>
+                        <select id="enterStudies" name="user_studies" required>
+                            <option value="">-choisir le niveau-</option>
+                            <option value="bac">Bac</option>
+                            <option value="bac+2">Bac+2</option>
+                            <option value="bac+3">Bac+3</option>
+                            <option value="bac+4">Bac+4</option>
+                            <option value="bac+5">Bac+5</option>
+                            </select>
+                    </article>
+                    <article class="phoneNumber2">
+                        <label for="enterPhone">Numéro de téléphone :</label>
+                        <input type="tel" id="enterPhone" name="user_phoneNumber" required>
+                    </article>
+                    <article class="intro2">
+                        <label for="enterIntro">Présentation personnelle :</label>
+                        <textarea id="enterIntro" name="user_intro" rows="3"required></textarea>
+                    </article>
+                    <article class="hobbies2">
+                        <label for="enterHobbies1">Cinema</label>
+                        <input type="checkbox" id="enterHobbies1" name="user_hobbies" value="Cinema">
+                        <label for="enterHobbies2">Sport</label>
+                        <input type="checkbox" id="enterHobbies2" name="user_hobbies" value="Sport">
+                        <label for="enterHobbies3">Jeux-video</label>
+                        <input type="checkbox" id="enterHobbies3" name="user_hobbies" value="Jeux-video">
+                        <label for="enterHobbies4">Voyages</label>
+                        <input type="checkbox" id="enterHobbies4" name="user_hobbies" value="Voyages">
+                    </article>
+                    <article class="button2">
+                        <button type="submit" formaction="connexion.html">Valider</button>
+                    </article>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer2">
+            <p>Yaya-production™️</p>
+        </footer>
+        
+    
+    </body>
+</html>
